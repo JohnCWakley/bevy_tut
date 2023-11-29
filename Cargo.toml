@@ -1,0 +1,19 @@
+# YouTube Tutorial Link: https://www.youtube.com/watch?v=B6ZFuYYZCSY
+
+[package]
+name = "bevy_tut"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+author = "John Wakley <john.wakley@icloud.com>"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = "0.12.0"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
